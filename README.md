@@ -5,17 +5,30 @@
 ## Build Setup
 
 ``` bash
+# create a python3.6 virtual environment
+python3.6 -m venv venv
+
+# activate virtual environment
+source venv/bin/activate
+
+# install requirements.txt
+pip install -r requirements.txt
+
+# migrate
+python manage.py migrate
+
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
+# build for development with hot reload
+webpack --watch
 
 # build for production with minification
-npm run build
+webpack
 
-# build for production and view the bundle analyzer report
-npm run build --report
+# run server
+python manage.py runserver
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Developer
+Dennis Joel Mwagiru dennismwagiru@gmail.com
